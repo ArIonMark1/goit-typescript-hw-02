@@ -6,6 +6,9 @@
 type gender = "male" | "female"; // union type
 
 const myGender: gender = "male";
+let myGender2: gender;
 
+myGender2 = "male";
+myGender2 = "female";
 
 export {};
