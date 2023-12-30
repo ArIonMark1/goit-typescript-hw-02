@@ -1,8 +1,15 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
+type pageStructure = {
+  title: string,
+  likes: number,
+  accounts: string[],
+  status: "open" | "close",
+  details?: {createAt: Date, updateAt: Date},
+}
 
-const page1 = {
+const page1: pageStructure = {
   title: 'The awesome page',
   likes: 100,
   accounts: ['Max', 'Anton', 'Nikita'],
@@ -13,7 +20,7 @@ const page1 = {
   }
 }
 
-const page2 = {
+const page2: pageStructure = {
   title: 'Python or Js',
   likes: 5,
   accounts: ['Alex'],
